@@ -1,0 +1,22 @@
+{
+  "name": "wh-server",
+  "version": "1.0.0",
+  "description": "웨헤 Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Where-Hair/WH-Server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Where-Hair/WH-Server/issues"
+  },
+  "homepage": "https://github.com/Where-Hair/WH-Server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
