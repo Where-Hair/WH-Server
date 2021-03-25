@@ -2,7 +2,7 @@ const { User } = require("../../model");
 const query = require("./query");
 const token = require("./token");
 
-const register = async (req, res) => {
+const signUp = async (req, res) => {
     const { nickname ,id, password } = req.body;
     try {
         const encodedPassword = await query.passwordEncoding(password);
@@ -18,7 +18,7 @@ const register = async (req, res) => {
     }
 };
 
-const login = async (req, res) => {
+const signIn = async (req, res) => {
     const { id, password } = req.body;
     try {
         const user = await query.findOneByUserId(id);
@@ -34,6 +34,6 @@ const login = async (req, res) => {
 };
 
 module.exports = {
-    register,
-    login,
+    signUp,
+    signIn,
 };
