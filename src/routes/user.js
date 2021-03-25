@@ -1,5 +1,5 @@
 const router = require('express');
-const controller = require('../controller/user');
+const controller = require('../controller/user/user');
 const auth = require('../middlewares/auth');
 
 router.post('/signIn', controller.signIn);
