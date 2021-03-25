@@ -25,8 +25,7 @@ const login = async (req, res) => {
         if(!user) throw new Error ("계정 없음");
         if (!(await query.passwordCompare(password, user.password)))
         res.status(409).end();
-        const accessToken = await access(user.id, process.env.SECRET_KEY);
-        res.status(200).json(accessToken);
+        const accessToken = await token.access(req, user);
       } catch (err) {
           res.status(404).json({
               message: "실패",
