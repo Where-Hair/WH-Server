@@ -15,6 +15,19 @@ const showMain = async (req, res) => {
         }
 };
 
+const detailPost = async (res, req) => {
+    try {
+        console.log(req.params);
+        await Post.destroy({
+            where: { id : req.params.id }
+        });
+        res.status(200).end()
+    } catch (e) {
+        res.status(409).end()
+    }
+};
+
 module.exports = {
-    showMain
-}
+    showMain,
+    detailPost,
+};
