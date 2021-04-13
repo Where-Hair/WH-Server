@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Where-Hair/WH-Server#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "package.json": "^2.0.1"
   }
 }
