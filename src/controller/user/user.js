@@ -33,7 +33,14 @@ const signIn = async (req, res) => {
       } 
 };
 
+const refresh = async(req, res) => {
+    const user = await query.findOneByUserId(req.decode.id);
+    const accessToken = await token.access(req, user);
+    res.status(200).json({accessToken});
+}
+
 module.exports = {
     signUp,
     signIn,
+    refresh,
 };
