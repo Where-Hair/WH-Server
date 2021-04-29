@@ -15,11 +15,6 @@ const showProfile = async (req, res) => {
     }
 };
 
-const modifyProfile = async (req, res) => {
-    const id = req.decode.id;
-    
-}
-
 module.exports = {
     showProfile,
 
