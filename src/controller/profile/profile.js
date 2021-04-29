@@ -9,11 +9,16 @@ const showProfile = async (req, res) => {
             message: "성공"
         });
     } catch {
-        res.status(400).json({
+        res.status(404).json({
             message: "실패"
         });
     }
 };
+
+const modifyProfile = async (req, res) => {
+    const id = req.decode.id;
+    
+}
 
 module.exports = {
     showProfile,
