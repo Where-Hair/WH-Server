@@ -1,4 +1,5 @@
-const { User, Post } = require("../../model");
+// const { User, Post } = require("../../model");
+const Post = require("../../model/post");
 const query = require('./query');
 
 const showMain = async (req, res) => {

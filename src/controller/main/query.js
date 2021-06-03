@@ -1,4 +1,5 @@
-const { User, Post } = require('../../model');
+// const { User, Post } = require('../../model');
+const User = require("../../model/user");
 const post = require('../../model/post');
 
 const show = async (id) => {
